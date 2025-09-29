@@ -5,8 +5,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+    - [Key Features](#key-features
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -20,11 +19,11 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+  
 <!-- PROJECT DESCRIPTION -->
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Data tools final project] <a name="about-project"></a>
 > Describe your project in 1 or 2 sentences.
-**[your_project__name]** is a...
+**[]** is a...
 ## 🛠 Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
 > Describe the tech stack and include only the relevant sections that apply to your project e.g SQL.
@@ -53,11 +52,7 @@
 - **[key_feature_2]**
 - **[key_feature_3]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
-> Add a link to your deployed project only if available.
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
 > Describe how a new developer could make use of your project.
@@ -154,11 +149,7 @@ I would like to thank...
 - **[Question_2]**
   - [Answer_2]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- LICENSE -->
-## 📝 License <a name="license"></a>
-This project is [MIT](./LICENSE) licensed.
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 0 commit comments
 Comments
 0
