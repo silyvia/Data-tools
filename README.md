@@ -59,38 +59,38 @@
 To get a local copy up and running, follow these steps.
 ### Prerequisites
 In order to run this project you need:
-<!--A Supabase account.
-
-Example command:
-```Basic knowledge of SQL commands.
+<!--A Supabase account
+```Basic knowledge of SQL commands:
 
 ```
  -->
 ### Setup
 Clone this repository to your desired folder:
 <!--
-Example commands:
+
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
+  
+```git clone git@github.com:your_account/your_repo_name.git
+cd your_repo_name:
+
 --->
 ### Install
 Install this project with:
-<!--
-Example command:
-```sh
-  cd my-project
-  gem install
-```
+<!--Provision Database: Create a new project instance within the Supabase dashboard.
+
+Locate Script: The full database schema and sample data are contained in the schema.sql file.
+
 --->
 ### Usage
 To run the project, execute the following command:
 <!--
 Example command:
 ```sh
-  rails server
-```
+  To initialize the database schema and populate it with sample data:
+
+Navigate to the SQL Editor within your Supabase project dashboard.
+`
+``
 --->
 ### Run tests
 To run tests, run the following command:
