@@ -59,10 +59,11 @@
 To get a local copy up and running, follow these steps.
 ### Prerequisites
 In order to run this project you need:
-<!--
+<!--A Supabase account.
+
 Example command:
-```sh
- gem install rails
+```Basic knowledge of SQL commands.
+
 ```
  -->
 ### Setup
