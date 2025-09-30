@@ -66,7 +66,7 @@ In order to run this project you need:
 
  -->
 ### Setup
-The entire schemais defined in the schema.sql file The process involved:
+The entire schema is defined in the schema.sql file The process involved:
 <!--
 
 ```sh
@@ -159,4 +159,3 @@ Comments
 Comment
 You're not receiving notifications from this thread.
 
-Copied!
