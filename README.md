@@ -160,15 +160,12 @@ If you find this schema useful for designing your E-learning applications,please
 > Give credit to everyone who inspired your codebase.
 I would like to thank my instructors and the Supabase team for providing the tools and guidance necessary for this project. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- FAQ Why is enrollments a separate table?
-  - This is necessary because the relationship between students and courses is Many-to-Many (one student takes many courses, and one course has many students). The enrollments table acts as a junction to manage this relationship.
+<!-- 
 
-
-  - ) -->
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 > Add at least 2 questions new developers would ask when they decide to use your project.
 - **[Why is enrollment aseparate table?]**
-  - This is necessary because the relationship between students and courses is Many-to-Many (one student takes many courses, and one course has many students). The enrollments table acts as a junction to manage this relationship.]
+  - [This is necessary because the relationship between students and courses is Many-to-Many (one student takes many courses, and one course has many students). The enrollments table acts as a junction to manage this relationship.]
 - **How can i see a student's full course load?]**
   - [ You must use a 3-table JOIN query between students, courses, and enrollments, linked by their respective IDs.]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
