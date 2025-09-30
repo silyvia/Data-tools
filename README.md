@@ -69,7 +69,11 @@ In order to run this project you need:
 The entire schema is defined in the schema.sql file The process involved:
 <!--
 
-```sh
+```Creating the Base Tables: Defining the students and courses tables, each with its respective Primary Key (student_id and course_id).
+
+Creating the Junction Table: Defining the enrollments table, which acts as the intermediary between the other two.
+
+Implementing Foreign Keys: Establishing the REFERENCES constraints within the enrollments table to link back to the students and courses Primary Keys, ensuring relational integrity.
   
 ```git clone git@github.com:your_account/your_repo_name.git
 cd your_repo_name:
@@ -97,7 +101,7 @@ Navigate to the SQL Editor within your Supabase project dashboard.
 To run tests, run the following command:
 <!--
 Example command:
-```sh
+```
   bin/rails test test/models/article_test.rb
 ```
 --->
