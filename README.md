@@ -59,7 +59,7 @@
 
 ### Prerequisites
 In order to run this project you need:
-<!--A Supabase account
+<!--A supabase acoount
 ```Basic knowledge of SQL commands:
 
 ```The schema.sql file.
