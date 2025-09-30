@@ -100,7 +100,20 @@ Navigate to the SQL Editor within your Supabase project dashboard.
 ### Run tests
 To run tests, run the following command:
 <!--
-Example command:
+Example command:-- Test Query: Verifies FK links by combining student, course, and enrollment data.
+SELECT
+    s.student_name,         
+    c.course_name,          
+    e.grade_received        
+FROM
+    enrollments e 
+JOIN
+    students s ON e.student_id = s.student_id
+JOIN
+    courses c ON e.course_id = c.course_id
+ORDER BY
+    s.student_name;
+
 ```
   bin/rails test test/models/article_test.rb
 ```
@@ -140,26 +153,27 @@ Feel free to check the [issues page](../../issues/).
 <!-- SUPPORT -->
 ## ⭐️ Show your support <a name="support"></a>
 > Write a message to encourage readers to support your project
-If you like this project...
+If you find this schema useful for designing your E-learning applications,please give a repository star.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ACKNOWLEDGEMENTS -->
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 > Give credit to everyone who inspired your codebase.
-I would like to thank...
+I would like to thank my instructors and the Supabase team for providing the tools and guidance necessary for this project. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- FAQ (optional) -->
+<!-- FAQ Why is enrollments a separate table?
+  - This is necessary because the relationship between students and courses is Many-to-Many (one student takes many courses, and one course has many students). The enrollments table acts as a junction to manage this relationship.
+
+
+  - ) -->
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 > Add at least 2 questions new developers would ask when they decide to use your project.
-- **[Question_1]**
-  - [Answer_1]
-- **[Question_2]**
-  - [Answer_2]
+- **[Why is enrollment aseparate table?]**
+  - This is necessary because the relationship between students and courses is Many-to-Many (one student takes many courses, and one course has many students). The enrollments table acts as a junction to manage this relationship.]
+- **How can i see a student's full course load?]**
+  - [ You must use a 3-table JOIN query between students, courses, and enrollments, linked by their respective IDs.]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 0 commit comments
 Comments
-0
- (0)
-Comment
-You're not receiving notifications from this thread.
+
 
