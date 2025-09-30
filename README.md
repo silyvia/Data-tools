@@ -21,20 +21,20 @@
 - [❓ FAQ (OPTIONAL)](#faq)
   
 <!-- PROJECT DESCRIPTION -->
-# 📖 [Data tools final project] <a name="about-project"></a>
-> Describe your project in 1 or 2 sentences.
-**[]** is a...
+# 📖 [Data tools final project-E-learning platform data base] <a name="about-project"></a>
+>The project established the relationaldatabase foundation for a digital E-learning platform,successfully modeling the relationship between students,available courses and their records of enrolment .
+**[E-learning platform i]** is a fullyfunctional three-table relational data schema.
 ## 🛠 Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
-> Describe the tech stack and include only the relevant sections that apply to your project e.g SQL.
+> The project utilized a standard open-source data stack to ensure portability and stability.
 <details>
-  <summary>Client</summary>
+  <summary>Cloud Backened</summary>
   <ul>
-    <li><a href="https://reactjs.org/">Supabase</a></li>
+    <li><a href="https://supabase.io/">Supabase</a>(PostgreSQL hosting)</li>
   </ul>
-</details>
+</detais>
 <details>
-  <summary>Server</summary>
+  <summary>Language</summary>
   <ul>
     <li><a href="https://expressjs.com/">SQL</a></li>
   </ul>
@@ -48,24 +48,25 @@
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
 > Describe between 1-3 key features of the application.
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Many-to-Many Enrollment: Successfully implemented the Many-to-Many relationship between students and courses using the enrollments junction table. This allows a student to take multiple courses and a course to have multiple students.]**
+- **[Data Integrity via Foreign Keys: Defined two mandatory Foreign Keys in the enrollments table (student_id and course_id) to ensure that every enrollment record links to existing, valid student and course entries.]**
+- **[Sample Data Population: Populated all three tables (students, courses, and enrollments) with six rows of sample data each, providing a functional dataset for Week 2 analysis.]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
-> Describe how a new developer could make use of your project.
-To get a local copy up and running, follow these steps.
+> To demonstrate the project's setup,follow these steps to recreate database structure and data.
+
 ### Prerequisites
 In order to run this project you need:
 <!--A Supabase account
 ```Basic knowledge of SQL commands:
 
-```
+```The schema.sql file.
+
  -->
 ### Setup
-Clone this repository to your desired folder:
+The entire schemais defined in the schema.sql file The process involved:
 <!--
 
 ```sh
