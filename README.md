@@ -1,5 +1,6 @@
 
 
+
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 - [📖 About the Project](#about-project)
@@ -113,6 +114,12 @@ JOIN
     courses c ON e.course_id = c.course_id
 ORDER BY
     s.student_name;
+
+<img width="1101" height="818" alt="image" src="https://github.com/user-attachments/assets/ba7f20c3-1c24-4ede-ab13-c6040a209edf" />
+
+
+
+
 
 ```
   bin/rails test test/models/article_test.rb
