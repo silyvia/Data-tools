@@ -68,6 +68,12 @@ In order to run this project you need:
  -->
 ### Setup
 The entire schema is defined in the schema.sql file The process involved:
+
+<img width="1602" height="547" alt="image" src="https://github.com/user-attachments/assets/965962df-7542-4fd0-b78f-feaea43a7faf" />
+
+<img width="1407" height="482" alt="image" src="https://github.com/user-attachments/assets/97e40dbf-e427-41da-bfd5-0e5d0c5e3fca" />
+<img width="1422" height="518" alt="image" src="https://github.com/user-attachments/assets/f59dbf91-ab12-4fdd-8eea-778453df4fcb" />
+
 <!--
 
 ```Creating the Base Tables: Defining the students and courses tables, each with its respective Primary Key (student_id and course_id).
@@ -89,12 +95,14 @@ Locate Script: The full database schema and sample data are contained in the sch
 --->
 ### Usage
 To run the project, execute the following command:
-<!--
-Example command:
-```sh
-  To initialize the database schema and populate it with sample data:
+<!-- 
+`
+``To initialize the database schema and populate it with sample data:
 
 Navigate to the SQL Editor within your Supabase project dashboard.
+Example command:
+```sh
+  
 `
 ``
 --->
@@ -127,7 +135,7 @@ ORDER BY
 --->
 ### Deployment
 You can deploy this project using:
-<!--
+<!--supabase
 Example:
 ```sh
 ```
@@ -159,13 +167,11 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- SUPPORT -->
 ## ⭐️ Show your support <a name="support"></a>
-> Write a message to encourage readers to support your project
-If you find this schema useful for designing your E-learning applications,please give a repository star.
+>If you find this schema useful for designing your E-learning applications,please give a repository star.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ACKNOWLEDGEMENTS -->
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-> Give credit to everyone who inspired your codebase.
-I would like to thank my instructors and the Supabase team for providing the tools and guidance necessary for this project. 
+>I would like to thank my instructor and the Supabase team for providing the tools and guidance necessary for this project. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- 
 
