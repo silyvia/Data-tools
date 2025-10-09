@@ -21,7 +21,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+  
   
 <!-- PROJECT DESCRIPTION -->
 # 📖 [Data tools final project-E-learning platform data base] <a name="about-project"></a>
