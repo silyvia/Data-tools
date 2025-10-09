@@ -94,6 +94,7 @@ CREATE TABLE public.students (
     major TEXT, -- e.g., 'Computer Science', 'Data Analytics'
     registration_date DATE DEFAULT CURRENT_DATE
 );
+```
 
 -- Insert 6 rows of sample student data
 INSERT INTO public.students (student_name, email, major)
@@ -105,7 +106,8 @@ VALUES
     ('Emily Wanjiku', 'emily.w@email.com', 'Data Analytics'),
     ('Peter Ndungâ€™u', 'peter.n@email.com', 'Web Development');
 
-
+```
+```sql
 -- 2. Create the courses Table
 -- Stores the course catalog.
 CREATE TABLE public.courses (
@@ -124,7 +126,8 @@ VALUES
     (104, 'Cloud Computing Basics', 'Mr. Kioko', 2.0),
     (105, 'Web Design Principles', 'Dr. Mwangi', 3.0),
     (106, 'Advanced Data Visualization', 'Prof. Adisa', 4.0);
-
+```
+```sql
 
 -- 3. Create the enrollments Table (The central linking table)
 -- Records which student is taking which course.
