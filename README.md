@@ -81,18 +81,84 @@ Install this project with:
 --->
 ### Usage
 To run the project, execute the following command:
-<```Open supabase,create a new project,and access the SQL editor.>
-<```Execute the schema.sql file in supabase SQL editor to create tables and insert sample data.>
-<```The following is the sql schema:>
-<img width="793" height="292" alt="image" src="https://github.com/user-attachments/assets/a7a7d622-6f91-496b-a5cf-8bb4ab0d3b26" />
-<img width="726" height="225" alt="image" src="https://github.com/user-attachments/assets/f4f66ddd-3f53-4708-86bb-d175d501b29a" />
-<img width="898" height="138" alt="image" src="https://github.com/user-attachments/assets/4d5f7dbd-7aa7-4dca-9319-511abbacc6ce" />
-<img width="777" height="225" alt="image" src="https://github.com/user-attachments/assets/5b6270fd-47ac-4a00-800c-77b103269f0f" />
-<img width="918" height="280" alt="image" src="https://github.com/user-attachments/assets/cff933f3-1429-4f1e-bdfd-2a2bbccc63c0" />
-<img width="1697" height="253" alt="image" src="https://github.com/user-attachments/assets/1dff7ab6-9c79-4a04-877b-b9a1ed98e91a" />
+```sql
+-- E-learning Platform Database Schema (Week 1)
+-- Tables: students, courses, enrollments
+
+-- 1. Create the students Table
+-- Stores user/student profile data.
+CREATE TABLE public.students (
+    student_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    student_name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    major TEXT, -- e.g., 'Computer Science', 'Data Analytics'
+    registration_date DATE DEFAULT CURRENT_DATE
+);
+
+-- Insert 6 rows of sample student data
+INSERT INTO public.students (student_name, email, major)
+VALUES 
+    ('Sarah Kamau', 'sarah.k@email.com', 'Data Analytics'),
+    ('David Omondi', 'david.o@email.com', 'Web Development'),
+    ('Aisha Gichuru', 'aisha.g@email.com', 'Marketing'),
+    ('John Mburu', 'john.m@email.com', 'Computer Science'),
+    ('Emily Wanjiku', 'emily.w@email.com', 'Data Analytics'),
+    ('Peter Ndungâ€™u', 'peter.n@email.com', 'Web Development');
 
 
+-- 2. Create the courses Table
+-- Stores the course catalog.
+CREATE TABLE public.courses (
+    course_id INT PRIMARY KEY,
+    course_name TEXT UNIQUE NOT NULL, -- e.g., 'Intro to SQL', 'Advanced Python'
+    instructor TEXT NOT NULL,
+    credits NUMERIC(2, 1) -- Course credit hours (e.g., 3.0)
+);
 
+-- Insert 6 rows of sample course data
+INSERT INTO public.courses (course_id, course_name, instructor, credits)
+VALUES 
+    (101, 'Introduction to SQL', 'Dr. Mwangi', 3.0),
+    (102, 'Data Modeling Fundamentals', 'Prof. Adisa', 4.0),
+    (103, 'Python for Beginners', 'Ms. Chepkoech', 3.0),
+    (104, 'Cloud Computing Basics', 'Mr. Kioko', 2.0),
+    (105, 'Web Design Principles', 'Dr. Mwangi', 3.0),
+    (106, 'Advanced Data Visualization', 'Prof. Adisa', 4.0);
+
+
+-- 3. Create the enrollments Table (The central linking table)
+-- Records which student is taking which course.
+CREATE TABLE public.enrollments (
+    enrollment_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    
+    -- FOREIGN KEY 1: Links to the student
+    student_id UUID REFERENCES public.students(student_id) ON DELETE CASCADE, 
+    
+    -- FOREIGN KEY 2: Links to the course
+    course_id INT REFERENCES public.courses(course_id) ON DELETE RESTRICT,
+    
+    enrollment_date DATE DEFAULT CURRENT_DATE,
+    grade_received TEXT -- e.g., 'A', 'B+', 'In Progress'
+);
+
+-- Insert 6 rows of sample enrollment data
+INSERT INTO public.enrollments (student_id, course_id, grade_received)
+VALUES 
+    ((SELECT student_id FROM public.students WHERE student_name = 'Sarah Kamau'), (SELECT course_id FROM public.courses WHERE course_name = 'Data Modeling Fundamentals'), 'B+'),
+    ((SELECT student_id FROM public.students WHERE student_name = 'David Omondi'), (SELECT course_id FROM public.courses WHERE course_name = 'Web Design Principles'), 'A'),
+    ((SELECT student_id FROM public.students WHERE student_name = 'Aisha Gichuru'), (SELECT course_id FROM public.courses WHERE course_name = 'Introduction to SQL'), 'A-'),
+    ((SELECT student_id FROM public.students WHERE student_name = 'John Mburu'), (SELECT course_id FROM public.courses WHERE course_name = 'Cloud Computing Basics'), 'In Progress'),
+    ((SELECT student_id FROM public.students WHERE student_name = 'Sarah Kamau'), (SELECT course_id FROM public.courses WHERE course_name = 'Advanced Data Visualization'), 'B'),
+    ((SELECT student_id FROM public.students WHERE student_name = 'Peter Ndungâ€™u'), (SELECT course_id FROM public.courses WHERE course_name = 'Python for Beginners'), 'In Progress');
+
+   
+```
+###Output of the sql queries
+```sql
+ select * from students
+```
+**All students**
+<img width="1576" height="705" alt="image" src="https://github.com/user-attachments/assets/a3beb5df-857a-4e94-9f0e-f6f24414a2ef" />
 
 ### ERD DIAGRAM
 
