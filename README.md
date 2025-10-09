@@ -12,6 +12,8 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
+  - ERD Diagram.
+  - Schema SQL
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
@@ -92,10 +94,11 @@ To run the project, execute the following command:
 
 
 
-###ERD DIAGRAM
+### ERD DIAGRAM
+
+<img width="915" height="580" alt="image" src="https://github.com/user-attachments/assets/27028d25-16e1-44a5-b460-6e4e9e889933" />
 
 
-<img width="1127" height="758" alt="image" src="https://github.com/user-attachments/assets/25b9ad6c-4675-4ca4-b025-be1769a37a2e" />
 
 
 `
@@ -136,35 +139,30 @@ ORDER BY
 ```
 --->
 ### Deployment
-You can deploy this project using:
-<!--supabase
+
+<```You can deploy this project using:>
+<--supabase>
 Example:
 ```sh
 ```
  -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- AUTHORS -->
-## 👥 Authors <a name="authors"></a>
-> Mention all of the collaborators of this project.
+## 👥 Authors <Silyvia ongwae="authors"></a>
+> Silyvia Ongwae
 👤 **Author1**
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-👤 **Author2**
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/silyvia/
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
-> Describe 1 - 3 features you will add to the project.
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+
+- **Application-level functionality**
+-  **Status tracking management**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
 ## 🤝 Contributing <a name="contributing"></a>
-Contributions, issues, and feature requests are welcome!
+<``Contributions, issues, and feature requests are welcome!>
 Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- SUPPORT -->
@@ -176,16 +174,13 @@ Feel free to check the [issues page](../../issues/).
 >I would like to thank my instructor and the Supabase team for providing the tools and guidance necessary for this project. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- 
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+  ## ❓FAQ (OPTIONAL) <a name="faq"></a>
 > Add at least 2 questions new developers would ask when they decide to use your project.
-- **[Why is enrollment aseparate table?]**
-  - [This is necessary because the relationship between students and courses is Many-to-Many (one student takes many courses, and one course has many students). The enrollments table acts as a junction to manage this relationship.]
+- **Why is enrollment aseparate table?**
+  <``This is necessary because the relationship between students and courses is Many-to-Many (one student takes many courses, and one course has many students). The enrollments table acts as a junction to manage this relationship.>
 - **How can i see a student's full course load?]**
-  - [ You must use a 3-table JOIN query between students, courses, and enrollments, linked by their respective IDs.]
+  - ** You must use a 3-table JOIN query between students, courses, and enrollments, linked by their respective IDs.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-0 commit comments
-Comments
 
 
