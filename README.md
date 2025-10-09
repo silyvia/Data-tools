@@ -28,9 +28,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
 > The project utilized a standard open-source data stack to ensure portability and stability.
-<details>
-  <summary>Cloud Backened</summary>
-  <ul>
+
     <li><a href="https://supabase.io/">Supabase</a>(PostgreSQL hosting)</li>
   </ul>
 </detais>
@@ -60,19 +58,15 @@
 
 ### Prerequisites
 In order to run this project you need:
-<!--A supabase acoount
-```Basic knowledge of SQL commands:
+<--A supabase account>
+<```Basic knowledge of SQL commands:>
 
-```The schema.sql file.
+<```The schema.sql file.>
 
  -->
 ### Setup
 The entire schema is defined in the schema.sql file The process involved:
 
-<img width="1602" height="547" alt="image" src="https://github.com/user-attachments/assets/965962df-7542-4fd0-b78f-feaea43a7faf" />
-
-<img width="1407" height="482" alt="image" src="https://github.com/user-attachments/assets/97e40dbf-e427-41da-bfd5-0e5d0c5e3fca" />
-<img width="1422" height="518" alt="image" src="https://github.com/user-attachments/assets/f59dbf91-ab12-4fdd-8eea-778453df4fcb" />
 
 <!--
 
