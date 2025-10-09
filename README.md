@@ -66,31 +66,42 @@ In order to run this project you need:
  -->
 ### Setup
 <```clone this resipitory:>
-<!--
+<```https://github.com/silyvia?tab=repositories>
   
 
 --->
 ### Install
 Install this project with:
-<!--Provision Database: Create a new project instance within the Supabase dashboard.
+<```Provision Database: Create a new project instance within the Supabase dashboard.>
 
-Locate Script: The full database schema and sample data are contained in the schema.sql file.
+<```Locate Script: The full database schema and sample data are contained in the schema.sql file.>
 
 --->
 ### Usage
 To run the project, execute the following command:
-<!-- --output query
---<img width="1240" height="583" alt="image" src="https://github.com/user-attachments/assets/502fd739-0157-443c-8aa5-c91332db88d7" />
+<```Open supabase,create a new project,and access the SQL editor.>
+<```Execute the schema.sql file in supabase SQL editor to create tables and insert sample data.>
+<```The following is the sql schema:>
+<img width="793" height="292" alt="image" src="https://github.com/user-attachments/assets/a7a7d622-6f91-496b-a5cf-8bb4ab0d3b26" />
+<img width="726" height="225" alt="image" src="https://github.com/user-attachments/assets/f4f66ddd-3f53-4708-86bb-d175d501b29a" />
+<img width="898" height="138" alt="image" src="https://github.com/user-attachments/assets/4d5f7dbd-7aa7-4dca-9319-511abbacc6ce" />
+<img width="777" height="225" alt="image" src="https://github.com/user-attachments/assets/5b6270fd-47ac-4a00-800c-77b103269f0f" />
+<img width="918" height="280" alt="image" src="https://github.com/user-attachments/assets/cff933f3-1429-4f1e-bdfd-2a2bbccc63c0" />
+<img width="1697" height="253" alt="image" src="https://github.com/user-attachments/assets/1dff7ab6-9c79-4a04-877b-b9a1ed98e91a" />
 
-<img width="1357" height="647" alt="image" src="https://github.com/user-attachments/assets/81eb1212-af23-464d-9fdf-21532985bd8e" />
 
-<img width="1216" height="670" alt="image" src="https://github.com/user-attachments/assets/2a56eca4-138b-4cf3-9d49-040a178846bb" />
+
+
+###ERD DIAGRAM
+
+
+<img width="1127" height="758" alt="image" src="https://github.com/user-attachments/assets/25b9ad6c-4675-4ca4-b025-be1769a37a2e" />
 
 
 `
-``To initialize the database schema and populate it with sample data:
+<``To initialize the database schema and populate it with sample data:>
 
-Navigate to the SQL Editor within your Supabase project dashboard.
+<``Navigate to the SQL Editor within your Supabase project dashboard.
 Example command:
 ```sh
   
@@ -98,9 +109,9 @@ Example command:
 ``
 --->
 ### Run tests
-To run tests, run the following command:
+<``To run tests, run the following command:>
 <!--
-Example command:-- Test Query: Verifies FK links by combining student, course, and enrollment data.
+<``Example command:-- Test Query: Verifies FK links by combining student, course, and enrollment data.>
 SELECT
     s.student_name,         
     c.course_name,          
