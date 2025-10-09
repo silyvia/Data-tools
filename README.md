@@ -163,9 +163,15 @@ VALUES
 **All students**
 <img width="1576" height="705" alt="image" src="https://github.com/user-attachments/assets/a3beb5df-857a-4e94-9f0e-f6f24414a2ef" />
 
+**All students majoring in Data Analytics**
+<img width="1898" height="568" alt="image" src="https://github.com/user-attachments/assets/5d9e427f-7fad-40ed-a67a-6538e52e4037" />
+
+
 ### ERD DIAGRAM
 
 <img width="915" height="580" alt="image" src="https://github.com/user-attachments/assets/27028d25-16e1-44a5-b460-6e4e9e889933" />
+
+
 
 
 
