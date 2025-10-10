@@ -13,9 +13,6 @@
   - [Install](#install)
   - [Usage](#usage)
   - ERD Diagram.
-  - Schema SQL
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -174,51 +171,7 @@ VALUES
 
 
 
-
-
-`
-<``To initialize the database schema and populate it with sample data:>
-
-<``Navigate to the SQL Editor within your Supabase project dashboard.
-Example command:
-```sh
-  
-`
-``
---->
-### Run tests
-<``To run tests, run the following command:>
-<!--
-<``Example command:-- Test Query: Verifies FK links by combining student, course, and enrollment data.>
-SELECT
-    s.student_name,         
-    c.course_name,          
-    e.grade_received        
-FROM
-    enrollments e 
-JOIN
-    students s ON e.student_id = s.student_id
-JOIN
-    courses c ON e.course_id = c.course_id
-ORDER BY
-    s.student_name;
-
-<img width="1101" height="818" alt="image" src="https://github.com/user-attachments/assets/ba7f20c3-1c24-4ede-ab13-c6040a209edf" />
-
-
-
-
-
-```
-  bin/rails test test/models/article_test.rb
-```
---->
-### Deployment
-
-<```You can deploy this project using:>
-<--supabase>
-Example:
-```sh
+ 
 ```
  -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -248,9 +201,7 @@ Feel free to check the [issues page](../../issues/).
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 >I would like to thank my instructor and the Supabase team for providing the tools and guidance necessary for this project. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- 
   ## ❓FAQ (OPTIONAL) <a name="faq"></a>
-> Add at least 2 questions new developers would ask when they decide to use your project.
 - **Why is enrollment aseparate table?**
   <``This is necessary because the relationship between students and courses is Many-to-Many (one student takes many courses, and one course has many students). The enrollments table acts as a junction to manage this relationship.>
 - **How can i see a student's full course load?]**
