@@ -1,9 +1,9 @@
 
-
-
+# My E-learning platform SQL project
+<a name='readme-top'></a>
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
-- [📖 About the Project](#about-project)
+- [📖 My SQL project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features
@@ -21,48 +21,31 @@
   
   
 <!-- PROJECT DESCRIPTION -->
-# 📖 [Data tools final project-E-learning platform data base] <a name="about-project"></a>
->The project established the relationaldatabase foundation for a digital E-learning platform,successfully modeling the relationship between students,available courses and their records of enrolment .
-**[E-learning platform i]** is a fullyfunctional three-table relational data schema.
+# 📖 Data tools final project-E-learning platform data base <a name="about-project"></a>
+**My SQL project** is a simple data base that uses SQL postgre via Supabase and R to create query and secure a**E-learning platform**database.
 ## 🛠 Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
-> The project utilized a standard open-source data stack to ensure portability and stability.
-
-    <li><a href="https://supabase.io/">Supabase</a>(PostgreSQL hosting)</li>
-  </ul>
-</detais>
-<details>
-  <summary>Language</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">SQL</a></li>
-  </ul>
-</details>
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+-SQL
+-Postgres DB
+    
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
-> Describe between 1-3 key features of the application.
-- **[Many-to-Many Enrollment: Successfully implemented the Many-to-Many relationship between students and courses using the enrollments junction table. This allows a student to take multiple courses and a course to have multiple students.]**
-- **[Data Integrity via Foreign Keys: Defined two mandatory Foreign Keys in the enrollments table (student_id and course_id) to ensure that every enrollment record links to existing, valid student and course entries.]**
-- **[Sample Data Population: Populated all three tables (students, courses, and enrollments) with six rows of sample data each, providing a functional dataset for Week 2 analysis.]**
+- []**Tables**
+- []**Schema**
+- []**Acess control**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
-> To demonstrate the project's setup,follow these steps to recreate database structure and data.
+To rebuild DB,follow these steps.
 
 ### Prerequisites
-In order to run this project you need:
-<--A supabase account>
-<```Basic knowledge of SQL commands:>
+ To run this project, you need:
+- [supabase account](https://supabase.com/)
+- [knowledge of SQL commands](https://WWW.W3schools.com/sql/)
+- A schema for creating tables in the DB.
 
-<```The schema.sql file.>
-
- -->
+<!--###Setup -->
 ### Setup
 <```clone this resipitory:>
 <```https://github.com/silyvia?tab=repositories>
@@ -76,7 +59,8 @@ Install this project with:
 <```Locate Script: The full database schema and sample data are contained in the schema.sql file.>
 
 --->
-### Usage
+<!--###DB Creation--->
+### DB Schema
 To run the project, execute the following command:
 ```sql
 -- E-learning Platform Database Schema (Week 1)
@@ -153,10 +137,28 @@ VALUES
 
    
 ```
-###Output of the sql queries
+-The tables should look like this in Supabase:
+Enrollment
+<img width="1912" height="835" alt="image" src="https://github.com/user-attachments/assets/aff01f98-52d9-4906-ac4e-b41183a9ec36" />
+
+courses
+<img width="1911" height="782" alt="image" src="https://github.com/user-attachments/assets/bee139b6-0c64-40a4-95ed-b305ad861b36" />
+
+Students
+
+<img width="1916" height="755" alt="image" src="https://github.com/user-attachments/assets/4316746e-a05b-4bed-9ee5-df935ac733e0" />
+
+
+-To test the tables, I used two queries:
 ```sql
  select * from students
 ```
+```sql
+select*
+from students
+where major='Data analytics'
+```
+-Here are results of the queries:
 **All students**
 <img width="1576" height="705" alt="image" src="https://github.com/user-attachments/assets/a3beb5df-857a-4e94-9f0e-f6f24414a2ef" />
 
@@ -165,10 +167,9 @@ VALUES
 
 
 ### ERD DIAGRAM
+-The ERD screenshot from Supabase looks like this:
 
 <img width="915" height="580" alt="image" src="https://github.com/user-attachments/assets/27028d25-16e1-44a5-b460-6e4e9e889933" />
-
-
 
 
  
@@ -184,8 +185,8 @@ VALUES
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Application-level functionality**
--  **Status tracking management**
+- **Add security**
+-  **Link DB to R for visualisation purposes and further analyses**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
